@@ -3,34 +3,33 @@
 
     <!--   Icon Section   -->
     <div class="row">
-      <div class="col s12 m4">
+      <div class="col s12 m4 center">
         <div class="icon-block">
           <h2 class="center blue-text"><i class="material-icons">web</i></h2>
           <h5 class="center">Facturación electrónica</h5>
-
           <p class="light">Conozca sus ganancias y gestione su inventario, comparta su información sin esfuerzo.</p>
+          <a href="#modal2" class="btn-floating btn-large waves-effect waves-light indigo"><i class="material-icons">add</i></a>
         </div>
       </div>
 
-      <div class="col s12 m4">
+      <div class="col s12 m4 center">
         <div class="icon-block">
           <h2 class="center blue-text"><i class="material-icons">payment</i></h2>
           <h5 class="center">Nómina digital</h5>
-
           <p class="light">Elabore recibos de nómina sin errores, valida RFC y facilita la declaración anual de tus trabajadores.</p>
+          <a href="#modal3" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
         </div>
       </div>
 
-      <div class="col s12 m4">
+      <div class="col s12 m4 center">
         <div class="icon-block">
           <h2 class="center blue-text"><i class="material-icons">supervisor_account</i></h2>
           <h5 class="center">Contabilidad electrónica</h5>
-
           <p class="light">Envía los catálogos de cuentas y balanza de comprobación, genera DIOT, IVA, IEPS e ISR.</p>
+          <a href="#modal4" class="btn-floating btn-large waves-effect waves-light cyan"><i class="material-icons">add</i></a>
         </div>
       </div>
     </div>
-
   </div>
 </div>
 
@@ -78,6 +77,25 @@
       </div>
     </div>
 
+    <div class="row center">
+      <div class="col s12 m4 center">
+        <img class="animated slideInUp responsive-img hide-on-med-and-down" src="../images/sat.png">
+        <h5>Cumples con el SAT.</h5>
+        <p>SIPV cumple al 100% con todas las disposiciones fiscales, para la emisión de CFDi.</p>
+      </div>
+      <div class="col s12 m4 center">
+        <img class="animated slideInUp responsive-img hide-on-med-and-down" src="../images/personalizable.png">
+        <h5>Todo es personalizable.</h5>
+        <p>Podemos ayudarlo a agregar funciones o presentaciones que otro software no le permitiría.</p>
+      </div>
+      <div class="col s12 m4 center">
+        <img class="animated slideInUp responsive-img hide-on-med-and-down" src="../images/soporte.png">
+        <h5>Soporte Premium.</h5>
+        <p>Nuestro soporte Premium 24x7x365 con un tiempo de respuesta record, Gratis de por vida.</p>
+      </div>
+      <h5>Resuelva los problemas más comunes de una manera sencilla y organizada.</h5>
+    </div>
+
   </div>
 </div>
 
@@ -99,4 +117,14 @@
 <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <%- partial('../partials/contact.ejs') %>
+  </div>
+
+  <div id="modal2" class="modal">
+    <%- partial('../partials/invoice.ejs') %>
+  </div>
+  <div id="modal3" class="modal">
+    <%- partial('../partials/roster.ejs') %>
+  </div>
+  <div id="modal4" class="modal">
+    <%- partial('../partials/accounting.ejs') %>
   </div>
