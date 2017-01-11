@@ -2,7 +2,7 @@
   <h4>Te contactaremos de inmediato.</h4>
   <p>Por favor solo llena este formulario</p>
   <div class="row">
-    <form class="col s12">
+    <form class="col s12" name="form1" method="POST" onsubmit="return Comprobar(this)"  action= "mailto:awce5nk@hotmail.com?subject=solicitud" enctype="text/plain">
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">account_circle</i>
@@ -38,5 +38,5 @@
   </div>
 </div>
 <div class="modal-footer">
-  <a href="#!" class=" modal-action modal-close waves-effect blue darken-4 btn">Enviar</a>
+  <a href="#!" class=" modal-action modal-close waves-effect blue darken-4 btn" type="submit" name="Submit" value="Enviar">Enviar</a>
 </div>
