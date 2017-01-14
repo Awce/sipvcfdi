@@ -1,40 +1,516 @@
 <div class="modal-content">
   <h4>Bienvenido a la Tienda.</h4>
-  <!-- <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s12">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="name" type="text" class="validate">
-          <label for="name">Nombre completo</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">email</i>
-          <input id="email" type="email" class="validate">
-          <label for="email" data-error="wrong" data-success="right">Email</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">phonelink_ring</i>
-          <input id="phoneNumber" type="tel" class="validate">
-          <label for="phoneNumber">Telefono</label>
-        </div>
-      </div>
-      <div class="row center">
-        <div class="input-field col s12">
-          <div class="switch ">
-            <label>
-              Soy particular
-              <input type="checkbox">
-              <span class="lever"></span>
-              Soy despacho contable
-            </label>
-          </div>
-        </div>
-      </div>
-  </form>
-  </div> -->
+  <div class="row">
+    <h6>Escoje nuestras Apps.</h6>
+
+    <div class="">
+      <div id='collection-component-2b0c6d4b886'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'sipv.myshopify.com',
+      apiKey: '93ae66c4d146c494bbf3acb596df8b3d',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: 409031431,
+        node: document.getElementById('collection-component-2b0c6d4b886'),
+        moneyFormat: '%24%20%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "variantId": "all",
+    "contents": {
+      "variantTitle": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "AGREGAR"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#0d47a1",
+        "font-family": "Roboto, sans-serif",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#0c4091"
+        },
+        "border-radius": "2px",
+        ":focus": {
+          "background-color": "#0c4091"
+        },
+        "font-weight": "normal"
+      },
+      "variantTitle": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "title": {
+        "font-family": "Source Sans Pro, sans-serif"
+      },
+      "description": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      },
+      "compareAt": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      }
+    },
+    "googleFonts": [
+      "Roboto",
+      "Roboto",
+      "Source Sans Pro",
+      "Roboto",
+      "Roboto",
+      "Roboto"
+    ]
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "text": {
+      "button": "REVISAR PEDIDO"
+    },
+    "styles": {
+      "button": {
+        "background-color": "#0d47a1",
+        "font-family": "Roboto, sans-serif",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#0c4091"
+        },
+        "border-radius": "2px",
+        ":focus": {
+          "background-color": "#0c4091"
+        },
+        "font-weight": "normal"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "modalProduct": {
+    "contents": {
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#0d47a1",
+        "font-family": "Roboto, sans-serif",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#0c4091"
+        },
+        "border-radius": "2px",
+        ":focus": {
+          "background-color": "#0c4091"
+        },
+        "font-weight": "normal"
+      },
+      "variantTitle": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "title": {
+        "font-family": "Source Sans Pro, sans-serif"
+      },
+      "description": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      },
+      "compareAt": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      }
+    },
+    "googleFonts": [
+      "Roboto",
+      "Roboto",
+      "Source Sans Pro",
+      "Roboto",
+      "Roboto",
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#0d47a1",
+        ":hover": {
+          "background-color": "#0c4091"
+        },
+        ":focus": {
+          "background-color": "#0c4091"
+        },
+        "font-weight": "normal"
+      },
+      "count": {
+        "font-size": "13px"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-family": "Roboto, sans-serif"
+      },
+      "select": {
+        "font-family": "Roboto, sans-serif"
+      }
+    },
+    "googleFonts": [
+      "Roboto",
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<div id='collection-component-d7a7db2c79a'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'sipv.myshopify.com',
+      apiKey: '93ae66c4d146c494bbf3acb596df8b3d',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: 334398471,
+        node: document.getElementById('collection-component-d7a7db2c79a'),
+        moneyFormat: '%24%20%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "variantId": "all",
+    "contents": {
+      "variantTitle": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "AGREGAR"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#0d47a1",
+        "font-family": "Roboto, sans-serif",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#0c4091"
+        },
+        "border-radius": "2px",
+        ":focus": {
+          "background-color": "#0c4091"
+        },
+        "font-weight": "normal"
+      },
+      "variantTitle": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "title": {
+        "font-family": "Source Sans Pro, sans-serif"
+      },
+      "description": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      },
+      "compareAt": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      }
+    },
+    "googleFonts": [
+      "Roboto",
+      "Roboto",
+      "Source Sans Pro",
+      "Roboto",
+      "Roboto",
+      "Roboto"
+    ]
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "text": {
+      "button": "REVISAR PEDIDO"
+    },
+    "styles": {
+      "button": {
+        "background-color": "#0d47a1",
+        "font-family": "Roboto, sans-serif",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#0c4091"
+        },
+        "border-radius": "2px",
+        ":focus": {
+          "background-color": "#0c4091"
+        },
+        "font-weight": "normal"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "modalProduct": {
+    "contents": {
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#0d47a1",
+        "font-family": "Roboto, sans-serif",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#0c4091"
+        },
+        "border-radius": "2px",
+        ":focus": {
+          "background-color": "#0c4091"
+        },
+        "font-weight": "normal"
+      },
+      "variantTitle": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "title": {
+        "font-family": "Source Sans Pro, sans-serif"
+      },
+      "description": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      },
+      "compareAt": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      }
+    },
+    "googleFonts": [
+      "Roboto",
+      "Roboto",
+      "Source Sans Pro",
+      "Roboto",
+      "Roboto",
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#0d47a1",
+        ":hover": {
+          "background-color": "#0c4091"
+        },
+        ":focus": {
+          "background-color": "#0c4091"
+        },
+        "font-weight": "normal"
+      },
+      "count": {
+        "font-size": "13px"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-family": "Roboto, sans-serif"
+      },
+      "select": {
+        "font-family": "Roboto, sans-serif"
+      }
+    },
+    "googleFonts": [
+      "Roboto",
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+
+    </div>
+  </div>
 </div>
 <div class="modal-footer">
   <a href="#!" class=" modal-action modal-close waves-effect blue darken-4 btn">Cerrar</a>
